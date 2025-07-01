@@ -11,11 +11,11 @@ public class Runner {
 
 
 
-        WaterContainer butelka = new WaterContainer("butelka", 1000, 450);
-        WaterContainer szklanka = new WaterContainer("szklanka", 250, 150);
-        WaterContainer kieliszek = new WaterContainer("kieliszek", 180, 0);
-        WaterContainer sloik = new WaterContainer("słoik", 780, 0);
-        WaterContainer butla = new WaterContainer("butla", 2000, 760);
+        WaterContainer butelka = WaterContainer.create("butelka", 1000, 450);
+        WaterContainer szklanka = WaterContainer.create("szklanka", 250, 150);
+        WaterContainer kieliszek = WaterContainer.create("kieliszek", 180, 0);
+        WaterContainer sloik = WaterContainer.create("słoik", 780, 0);
+        WaterContainer butla = WaterContainer.create("butla", 2000, 760);
 
 
 
