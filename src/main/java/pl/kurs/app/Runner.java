@@ -1,6 +1,6 @@
 package pl.kurs.app;
 
-import pl.kurs.models.WaterContainers;
+import pl.kurs.models.WaterContainer;
 
 
 public class Runner {
@@ -11,11 +11,11 @@ public class Runner {
 
 
 
-        WaterContainers butelka = new WaterContainers("butelka", 1000, 450);
-        WaterContainers szklanka = new WaterContainers("szklanka", 250, 150);
-        WaterContainers kieliszek = new WaterContainers("kieliszek", 180, 0);
-        WaterContainers sloik = new WaterContainers("słoik", 780, 0);
-        WaterContainers butla = new WaterContainers("butla", 2000, 760);
+        WaterContainer butelka = new WaterContainer("butelka", 1000, 450);
+        WaterContainer szklanka = new WaterContainer("szklanka", 250, 150);
+        WaterContainer kieliszek = new WaterContainer("kieliszek", 180, 0);
+        WaterContainer sloik = new WaterContainer("słoik", 780, 0);
+        WaterContainer butla = new WaterContainer("butla", 2000, 760);
 
 
 
