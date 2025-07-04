@@ -7,13 +7,15 @@ public class Car {
     private int powerHp;
     private int torqueNm;
     private int year;
+    private char segment;
 
-    public Car(String producer, String model, int powerHp, int torqueNm, int year) {
+    public Car(String producer, String model, int powerHp, int torqueNm, int year, char segment) {
         this.producer = producer;
         this.model = model;
         this.powerHp = powerHp;
         this.torqueNm = torqueNm;
         this.year = year;
+        this.segment = segment;
     }
 
     public String getProducer() {
@@ -56,6 +58,14 @@ public class Car {
         this.year = year;
     }
 
+    public char getSegment() {
+        return segment;
+    }
+
+    public void setSegment(char segment) {
+        this.segment = segment;
+    }
+
     @Override
     public String toString() {
         return "Car{" +
@@ -64,6 +74,7 @@ public class Car {
                 ", powerHp=" + powerHp +
                 ", torqueNm=" + torqueNm +
                 ", year=" + year +
+                ", segment=" + segment +
                 '}';
     }
 }
