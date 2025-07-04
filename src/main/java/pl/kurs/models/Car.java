@@ -1,6 +1,10 @@
 package pl.kurs.models;
 
-public class Car {
+import java.io.Serializable;
+import java.util.Objects;
+
+public class Car implements Serializable {
+    private static final long serialVersionUID = 42L;
 
     private String producer;
     private String model;
@@ -64,6 +68,19 @@ public class Car {
 
     public void setSegment(char segment) {
         this.segment = segment;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Car car = (Car) o;
+        return powerHp == car.powerHp && torqueNm == car.torqueNm && year == car.year && segment == car.segment && Objects.equals(producer, car.producer) && Objects.equals(model, car.model);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(producer, model, powerHp, torqueNm, year, segment);
     }
 
     @Override
